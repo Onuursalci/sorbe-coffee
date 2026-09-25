@@ -305,11 +305,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .paneller{grid-template-columns:1fr}
   .f-kartlar{grid-template-columns:1fr}
   .taze .muhur{display:none}
-  .taze .pol-sol{display:none}
-  .taze .pol-sag{display:none}
-  .taze-satirlar{padding:0 18px}
-  .taze-script{font-size:clamp(30px,4.6vw,40px)}
-  .taze-satir{font-size:clamp(34px,7.2vw,54px)}
+  .taze-ic{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+  .taze .pol-sol,.taze .pol-sag{position:static;width:100%;max-width:340px;justify-self:center;height:auto;aspect-ratio:4/5}
+  .taze .pol-sol{transform:rotate(-2.2deg)}
+  .taze .pol-sag{transform:rotate(2.2deg)}
+  .taze-script,.taze-satirlar{grid-column:1/-1}
+  .taze-satirlar{padding:0 14px;margin-top:0}
+  .taze-script{font-size:clamp(30px,4.6vw,40px);justify-self:center}
+  .taze-satir{font-size:clamp(36px,8.4vw,54px)}
   .satirler{grid-template-columns:1fr;column-gap:0}
   .kolaj-ic{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:8px 0 4px}
   .kolaj-ic .polaroid{position:static;width:100%;height:auto;aspect-ratio:4/5}
